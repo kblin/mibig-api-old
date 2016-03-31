@@ -1,0 +1,4 @@
+---
+svchost: :8080
+dbdriver: sqlite3
+dbconnection: ./test.db

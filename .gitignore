@@ -1,0 +1,7 @@
+*.swp
+cli/mibig-api-server/mibig-api-server
+cli/mibig-api-client/mibig-api-client
+*.db
+data/*
+mibig-api
+production.yml
