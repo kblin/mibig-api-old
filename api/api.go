@@ -44,7 +44,7 @@ func (s *BgcDetailSubmission) Create(db *sql.DB, target string) error {
 	}
 	defer stmt.Close()
 
-	if _, err := stmt.Exec(statement, s.Submitted, s.Modified); err != nil {
+	if _, err := stmt.Exec(s.BgcId, s.Submitted, s.Modified, s.Raw, s.Version); err != nil {
 		return err
 	}
 
