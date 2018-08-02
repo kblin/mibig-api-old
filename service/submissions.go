@@ -18,11 +18,11 @@ func (mr *MibigResource) ServiceInfo(c *gin.Context) {
 }
 
 func (mr *MibigResource) StoreMibigSubmissionV1(c *gin.Context) {
-	mr.storeMibigSubmissionGeneric(c, "//thankyou.html", false)
+	mr.storeMibigSubmissionGeneric(c, "/thankyou.html", false)
 }
 
 func (mr *MibigResource) StoreMibigSubmissionV2(c *gin.Context) {
-	mr.storeMibigSubmissionGeneric(c, "//genes_form.html", true)
+	mr.storeMibigSubmissionGeneric(c, "/genes_form.html", true)
 }
 
 func (mr *MibigResource) storeMibigSubmissionGeneric(c *gin.Context, forward_to string, redirect bool) {
